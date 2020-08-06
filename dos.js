@@ -12,5 +12,44 @@ Considerar que las categorías pueden ser: almacen, lácteos, limpieza o bebidas
 
 function mostrar()
 {
-	alert("Hola Mundo");
+	let pregUsuario;
+	let nombreArticulo;
+	let categoriaArticulo;
+	let precioArticulo;
+	let precioArticuloMayor;
+	let articuloLacteos;
+
+	do 
+	{
+		
+
+		nombreArticulo = prompt("Ingrese el nombre del articulo");
+
+		categoriaArticulo = prompt("Ingrese la categoria del articulo (lacteos,limpieza,bebidas,etc)");
+
+		precioArticulo = prompt("Ingrese el precio del articulo");
+
+		if (precioArticulo > precioArticuloMayor) 
+		{
+			precioArticuloMayor = precioArticulo;
+		}
+
+		else if ((precioArticulo > precioArticuloMayor) && categoriaArticulo == "lacteos") 
+		{
+			articuloLacteos = precioArticulo;
+		}
+
+
+
+		pregUsuario = prompt("Desea ingresar mas articulos? si/no");
+
+
+
+	} while(pregUsuario == "si")
+
+
+
+
+
+	
 }
